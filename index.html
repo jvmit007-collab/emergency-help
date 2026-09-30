@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emergency Help | Community Safety</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header><div class="container nav">
+  <div class="logo">🚨 Emergency Help</div>
+  <nav><a href="#home">Home</a><a href="#contacts">Contacts</a><a href="#firstaid">First Aid</a><a href="#request">Request Help</a></nav>
+</div></header>
+
+<section id="home" class="hero"><div class="container">
+  <span class="badge">BSc IT • CEP Project</span>
+  <h1>Emergency Help & Important Contacts</h1>
+  <p>Quick access to important emergency services and basic first-aid information.</p>
+  <a class="btn danger" href="#contacts">View Emergency Contacts</a>
+</div></section>
+
+<section id="contacts" class="section container">
+<h2>Emergency Contacts</h2>
+<p class="muted">Tap a button to call from a mobile device.</p>
+<div class="cards" id="contactCards"></div>
+</section>
+
+<section id="firstaid" class="section dark"><div class="container">
+<h2>Basic First-Aid Guide</h2>
+<p class="notice">For serious emergencies, contact trained emergency services immediately.</p>
+<div class="cards aid">
+<div class="card"><h3>🩸 Severe Bleeding</h3><p>Apply firm pressure with clean cloth or gauze. Keep pressure until help arrives.</p></div>
+<div class="card"><h3>🔥 Burns</h3><p>Cool a minor burn under clean running water. Do not apply ice, butter, or toothpaste.</p></div>
+<div class="card"><h3>😵 Unconsciousness</h3><p>Check responsiveness and breathing. Call emergency services and follow the operator's instructions.</p></div>
+<div class="card"><h3>🦴 Fracture</h3><p>Keep the injured area still. Do not try to straighten the bone. Seek medical help.</p></div>
+</div>
+</div></section>
+
+<section id="request" class="section container">
+<div class="formbox">
+<h2>Emergency Help Request</h2>
+<p class="muted">This demo stores the request only in your browser. For an actual emergency, call the appropriate service directly.</p>
+<form id="helpForm">
+<label>Name<input id="name" required></label>
+<label>Phone<input id="phone" type="tel" required></label>
+<label>Location<input id="location" placeholder="Area / landmark" required></label>
+<label>Emergency Type<select id="type" required><option value="">Select</option><option>Medical</option><option>Fire</option><option>Police</option><option>Accident</option><option>Other</option></select></label>
+<label>Details<textarea id="details" rows="4" required></textarea></label>
+<button class="btn danger" type="submit">Submit Request</button>
+</form>
+<div id="success" class="success" hidden></div>
+</div>
+</section>
+
+<footer>© 2026 Emergency Help & Important Contacts System | BSc IT CEP Project</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>
